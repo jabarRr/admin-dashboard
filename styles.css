@@ -18,12 +18,32 @@ html{
     background-color: aqua;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    justify-items: start;
+    
 }
+.sidebarHead{
+    padding-left: 10%;
+    font-size: 40px;
+}
+
 .sideBar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
     list-style-type: none;
+    font-size: 40px;
     
 
 }
+.sidebar .optionsUpper{
+    background-color: cornflowerblue;
+}
+
+.sidebar .optionsLower{
+    background-color: darkcyan;
+}
+
 .header{
     display: grid;
     grid-template-columns: 1fr;
@@ -36,6 +56,11 @@ html{
     display: flex;
     justify-content: space-between;
     border-bottom: solid;
+    
+}
+
+.headerLower{
+
 }
 
 .mainContent{
@@ -70,22 +95,75 @@ html{
 
 
 .announcements{
+    padding: 5%;
+    gap: 10px;
     margin-bottom: 2%;
     border-radius: 1%;
     border: solid;
     background-color: darkkhaki;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+.announcements > div{
+    border-bottom: solid;
+}
+
 .trendingHeader{
     grid-row: 3 /4;
 }
 
 .trending{
+    padding: 5%;
     margin-bottom: 30px;
     border-radius: 1%;
     border: solid;
     background-color: darksalmon;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+.userPfp{
+    border: solid;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    
+
+    
+    
+
+
+}
+.userTag{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+}
+.userInfo{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.user{
+    border: solid;
+    border-radius: 2%;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+

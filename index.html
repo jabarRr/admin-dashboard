@@ -10,8 +10,10 @@
     <div class="container">
 
         <div class="sideBar">
-            <p>Dashboard</p>
-            <ul>
+
+            <p class="sidebarHead">Dashboard</p>
+
+            <ul class="optionsUpper">
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
@@ -20,7 +22,7 @@
                 <li>Communities</li>
             </ul>
 
-            <ul>
+            <ul class="optionsLower">
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
@@ -29,7 +31,12 @@
         </div>
         <div class="header">
             <div class="headerUpper">
-                <div class="searchBar">SearchBarDiv</div>
+                <div class="searchBar">
+                    <label for="searchBar">
+                        SearchBarIcon
+                    </label>
+                    <input type="search" id="searchBar">
+                </div>
                 <div class="notificaitonIcon">Notification Icon</div>
                 <div class="pfp">pfp area</div>
                 <div class="name">User name</div>
@@ -142,18 +149,27 @@
             <h1 class="trendingHeader">Trending</h1>
             <div class="trending">
 
-                <div class="user1">
-                    <p class="userTag">kaiius</p>
+                <div class="user">
+                    <div class="userPfp">
+                        <img src="images/cat-resize.jpg" alt="black cat">
+                    </div>
+                    <p class="userTag">@kaiius</p>
                     <p class="userInfo">Professional Jett</p>
                 </div>
 
-                <div class="user2">
-                    <p class="userTag">ghilbert</p>
+                <div class="user">
+                    <div class="userPfp">
+                        <img src="images/snorax_resize.jpg" alt="snorlax waving">
+                    </div>
+                    <p class="userTag">@ghilbert</p>
                     <p class="userInfo">Retired 101R Player</p>
                 </div>
 
-                <div class="user3">
-                    <p class="userTag">SouthSudan</p>
+                <div class="user">
+                     <div class="userPfp">
+                        <img src="images/standard_sized.jpg" alt="regular guy">
+                    </div>
+                    <p class="userTag">@SouthSudan</p>
                     <p class="userInfo">WR Rig Strat Holder</p>
                 </div>
 
